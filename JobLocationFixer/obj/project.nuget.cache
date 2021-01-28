@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "ii9D+If+jINtFpSkG5VhkfROekFiQhD80aZyMLJHJoYxfKGkeg+1eFIv0iuFQe8MuL6JKxCrdblwm08R9a1qwQ==",
+  "success": true,
+  "projectFilePath": "C:\\Repos\\JobLocationFixer\\JobLocationFixer\\JobLocationFixer.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\SORLIK\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.10\\microsoft.aspnetcore.app.ref.3.1.10.nupkg.sha512"
+  ],
+  "logs": []
+}
