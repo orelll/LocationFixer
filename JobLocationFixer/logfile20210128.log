@@ -1,0 +1,103 @@
+2021-01-28 08:56:24.650 +01:00 [INF] Application started with arguments: 
+2021-01-28 08:56:31.741 +01:00 [INF] Starting C:\Users\SORLIK\Desktop\Untitled-2.xml processing
+2021-01-28 08:56:55.734 +01:00 [INF] File is valid XML, can be processed
+2021-01-28 08:57:03.538 +01:00 [DBG] Found 111 job:location tags
+2021-01-28 08:57:09.677 +01:00 [DBG] Found 20 parent groups. Starting iteration through them
+2021-01-28 08:57:24.056 +01:00 [DBG] Found 20 job:location tags after reduction
+2021-01-28 08:57:40.024 +01:00 [INF] Saving file as C:\Users\SORLIK\Desktop\Untitled-2_modified.xml
+2021-01-28 08:57:40.032 +01:00 [INF] Application is going to shutdown
+2021-01-28 08:58:20.955 +01:00 [INF] Application started with arguments: 
+2021-01-28 08:58:21.102 +01:00 [INF] Starting C:\Users\SORLIK\Desktop\Untitled-2.xml processing
+2021-01-28 08:58:21.158 +01:00 [INF] File is valid XML, can be processed
+2021-01-28 08:58:24.893 +01:00 [DBG] Found 111 job:location tags
+2021-01-28 08:58:24.896 +01:00 [DBG] Found 20 parent groups. Starting iteration through them
+2021-01-28 08:58:24.899 +01:00 [DBG] Found 20 job:location tags after reduction
+2021-01-28 08:58:24.900 +01:00 [INF] Saving file as C:\Users\SORLIK\Desktop\Untitled-2_modified.xml
+2021-01-28 08:58:24.904 +01:00 [INF] Application is going to shutdown
+2021-01-28 09:00:05.322 +01:00 [INF] Application started with arguments: C:\Users\SORLIK\Desktop\Untitled-2.xml
+2021-01-28 09:00:05.488 +01:00 [INF] Starting C:\Users\SORLIK\Desktop\Untitled-2.xml processing
+2021-01-28 09:00:05.542 +01:00 [INF] File is valid XML, can be processed
+2021-01-28 09:00:05.546 +01:00 [DBG] Found 111 job:location tags
+2021-01-28 09:00:05.549 +01:00 [DBG] Found 20 parent groups. Starting iteration through them
+2021-01-28 09:00:05.554 +01:00 [DBG] Found 20 job:location tags after reduction
+2021-01-28 09:00:05.554 +01:00 [INF] Saving file as C:\Users\SORLIK\Desktop\Untitled-2_modified.xml
+2021-01-28 09:00:05.562 +01:00 [INF] Application is going to shutdown
+2021-01-28 09:00:44.077 +01:00 [INF] Application started with arguments: C:\Users\SORLIK\Desktop\Untitled-2.xml
+2021-01-28 09:00:44.250 +01:00 [INF] Starting C:\Users\SORLIK\Desktop\Untitled-2.xml processing
+2021-01-28 09:00:44.312 +01:00 [INF] File is valid XML, can be processed
+2021-01-28 09:00:44.316 +01:00 [DBG] Found 111 job:location tags
+2021-01-28 09:00:44.319 +01:00 [DBG] Found 20 parent groups. Starting iteration through them
+2021-01-28 09:00:44.323 +01:00 [DBG] Found 20 job:location tags after reduction
+2021-01-28 09:00:44.323 +01:00 [INF] Saving file as C:\Users\SORLIK\Desktop\Untitled-2_modified.xml
+2021-01-28 09:00:44.332 +01:00 [INF] Application is going to shutdown
+2021-01-28 09:02:56.369 +01:00 [INF] Application started with arguments: C:\Users\SORLIK\Desktop\Untitled-2.xml
+2021-01-28 09:03:04.232 +01:00 [INF] Starting C:\Users\SORLIK\Desktop\Untitled-2.xml processing
+2021-01-28 09:03:04.290 +01:00 [INF] File is valid XML, can be processed
+2021-01-28 09:03:04.293 +01:00 [DBG] Found 111 job:location tags
+2021-01-28 09:03:04.296 +01:00 [DBG] Found 20 parent groups. Starting iteration through them
+2021-01-28 09:03:04.300 +01:00 [DBG] Found 20 job:location tags after reduction
+2021-01-28 09:03:04.300 +01:00 [INF] Saving file as C:\Users\SORLIK\Desktop\Untitled-2_modified.xml
+2021-01-28 09:03:04.305 +01:00 [INF] Application is going to shutdown
+2021-01-28 09:03:21.713 +01:00 [INF] Application started with arguments: 
+2021-01-28 09:03:38.490 +01:00 [ERR] An exception occured: System.IndexOutOfRangeException: Index was outside the bounds of the array.
+   at JobLocationFixer.Program.Main(String[] args) in C:\Repos\JobLocationFixer\JobLocationFixer\Program.cs:line 12
+2021-01-28 09:03:38.491 +01:00 [INF] Application is going to shutdown
+2021-01-28 09:04:10.821 +01:00 [INF] Application started with arguments: 
+2021-01-28 09:04:18.620 +01:00 [ERR] An exception occured: System.IndexOutOfRangeException: Index was outside the bounds of the array.
+   at JobLocationFixer.Program.Main(String[] args) in C:\Repos\JobLocationFixer\JobLocationFixer\Program.cs:line 12
+2021-01-28 09:04:18.620 +01:00 [INF] Application is going to shutdown
+2021-01-28 09:05:19.252 +01:00 [INF] Application started with arguments: 
+2021-01-28 09:05:25.684 +01:00 [INF] Starting  processing
+2021-01-28 09:05:25.783 +01:00 [ERR] An exception occured: System.IO.FileNotFoundException: Filepath is empty
+   at XMLProcessor.ValidateAndThrow(String filepath) in C:\Repos\JobLocationFixer\JobLocationFixer\XMLProcessor.cs:line 28
+   at XMLProcessor.ProcessFile(String filepath) in C:\Repos\JobLocationFixer\JobLocationFixer\XMLProcessor.cs:line 13
+   at JobLocationFixer.Program.Main(String[] args) in C:\Repos\JobLocationFixer\JobLocationFixer\Program.cs:line 15
+2021-01-28 09:05:25.783 +01:00 [INF] Application is going to shutdown
+2021-01-28 09:05:49.864 +01:00 [INF] Application started with arguments: C:\Users\SORLIK\Desktop\Untitled-3.xml
+2021-01-28 09:05:50.038 +01:00 [INF] Starting C:\Users\SORLIK\Desktop\Untitled-3.xml processing
+2021-01-28 09:05:50.134 +01:00 [ERR] An exception occured: System.IO.FileNotFoundException: File does not exists: C:\Users\SORLIK\Desktop\Untitled-3.xml
+   at XMLProcessor.ValidateAndThrow(String filepath) in C:\Repos\JobLocationFixer\JobLocationFixer\XMLProcessor.cs:line 30
+   at XMLProcessor.ProcessFile(String filepath) in C:\Repos\JobLocationFixer\JobLocationFixer\XMLProcessor.cs:line 13
+   at JobLocationFixer.Program.Main(String[] args) in C:\Repos\JobLocationFixer\JobLocationFixer\Program.cs:line 15
+2021-01-28 09:05:50.134 +01:00 [INF] Application is going to shutdown
+2021-01-28 09:06:07.946 +01:00 [INF] Application started with arguments: C:\Users\SORLIK\Desktop\Untitled-2.xml
+2021-01-28 09:06:08.119 +01:00 [INF] Starting C:\Users\SORLIK\Desktop\Untitled-2.xml processing
+2021-01-28 09:06:08.187 +01:00 [INF] File is valid XML, can be processed
+2021-01-28 09:06:08.190 +01:00 [DBG] Found 111 job:location tags
+2021-01-28 09:06:08.193 +01:00 [DBG] Found 20 parent groups. Starting iteration through them
+2021-01-28 09:06:08.199 +01:00 [DBG] Found 20 job:location tags after reduction
+2021-01-28 09:06:08.199 +01:00 [INF] Saving file as C:\Users\SORLIK\Desktop\Untitled-2_modified.xml
+2021-01-28 09:06:08.208 +01:00 [INF] Application is going to shutdown
+2021-01-28 09:07:18.756 +01:00 [INF] Application started with arguments: C:\Users\SORLIK\Desktop\Untitled-2.xml
+2021-01-28 09:07:18.995 +01:00 [INF] Starting C:\Users\SORLIK\Desktop\Untitled-2.xml processing
+2021-01-28 09:07:19.108 +01:00 [INF] File is valid XML, can be processed
+2021-01-28 09:07:19.113 +01:00 [DBG] Found 0 job:location tags
+2021-01-28 09:07:19.223 +01:00 [ERR] An exception occured: System.Xml.XmlException: Tag job:location not found.
+   at XMLProcessor.ProceedFile(XmlDocument doc) in C:\Repos\JobLocationFixer\JobLocationFixer\XMLProcessor.cs:line 47
+   at XMLProcessor.ProcessFile(String filepath) in C:\Repos\JobLocationFixer\JobLocationFixer\XMLProcessor.cs:line 17
+   at JobLocationFixer.Program.Main(String[] args) in C:\Repos\JobLocationFixer\JobLocationFixer\Program.cs:line 15
+2021-01-28 09:07:19.223 +01:00 [INF] Application is going to shutdown
+2021-01-28 09:10:25.250 +01:00 [INF] Application started with arguments: C:\Users\SORLIK\Desktop\Untitled-2.xml
+2021-01-28 09:10:25.421 +01:00 [INF] Starting C:\Users\SORLIK\Desktop\Untitled-2.xml processing
+2021-01-28 09:10:25.487 +01:00 [INF] File is valid XML, can be processed
+2021-01-28 09:10:25.491 +01:00 [DBG] Found 111 job:location tags
+2021-01-28 09:10:25.494 +01:00 [DBG] Found 20 parent groups. Starting iteration through them
+2021-01-28 09:10:25.501 +01:00 [DBG] Found 20 job:location tags after reduction
+2021-01-28 09:10:25.506 +01:00 [INF] Saving file as C:\Users\SORLIK\Desktop\Untitled-2_modified_28.01.2021 08:10:25.xml
+2021-01-28 09:10:25.607 +01:00 [ERR] An exception occured: System.IO.IOException: The filename, directory name, or volume label syntax is incorrect. : 'C:\Users\SORLIK\Desktop\Untitled-2_modified_28.01.2021 08:10:25.xml'
+   at System.IO.FileStream.ValidateFileHandle(SafeFileHandle fileHandle)
+   at System.IO.FileStream.CreateFileOpenHandle(FileMode mode, FileShare share, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share)
+   at System.Xml.XmlDocument.Save(String filename)
+   at XMLProcessor.ProcessFile(String filepath) in C:\Repos\JobLocationFixer\JobLocationFixer\XMLProcessor.cs:line 22
+   at JobLocationFixer.Program.Main(String[] args) in C:\Repos\JobLocationFixer\JobLocationFixer\Program.cs:line 15
+2021-01-28 09:10:25.607 +01:00 [INF] Application is going to shutdown
+2021-01-28 09:13:27.562 +01:00 [INF] Application started with arguments: C:\Users\SORLIK\Desktop\Untitled-2.xml
+2021-01-28 09:13:27.719 +01:00 [INF] Starting C:\Users\SORLIK\Desktop\Untitled-2.xml processing
+2021-01-28 09:13:27.778 +01:00 [INF] File is valid XML, can be processed
+2021-01-28 09:13:27.781 +01:00 [DBG] Found 111 job:location tags
+2021-01-28 09:13:27.784 +01:00 [DBG] Found 20 parent groups. Starting iteration through them
+2021-01-28 09:13:27.789 +01:00 [DBG] Found 20 job:location tags after reduction
+2021-01-28 09:13:27.792 +01:00 [INF] Saving file as C:\Users\SORLIK\Desktop\Untitled-2_modified_28_01_2021_08_13_27.xml
+2021-01-28 09:13:27.800 +01:00 [INF] Application is going to shutdown

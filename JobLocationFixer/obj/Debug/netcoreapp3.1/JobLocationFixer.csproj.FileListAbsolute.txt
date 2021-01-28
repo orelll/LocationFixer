@@ -24,3 +24,7 @@ C:\Repos\JobLocationFixer\JobLocationFixer\obj\Debug\netcoreapp3.1\JobLocationFi
 C:\Repos\JobLocationFixer\JobLocationFixer\obj\Debug\netcoreapp3.1\JobLocationFixer.dll
 C:\Repos\JobLocationFixer\JobLocationFixer\obj\Debug\netcoreapp3.1\JobLocationFixer.pdb
 C:\Repos\JobLocationFixer\JobLocationFixer\obj\Debug\netcoreapp3.1\JobLocationFixer.genruntimeconfig.cache
+C:\Repos\JobLocationFixer\JobLocationFixer\bin\Debug\netcoreapp3.1\Serilog.dll
+C:\Repos\JobLocationFixer\JobLocationFixer\bin\Debug\netcoreapp3.1\Serilog.Sinks.Console.dll
+C:\Repos\JobLocationFixer\JobLocationFixer\bin\Debug\netcoreapp3.1\Serilog.Sinks.File.dll
+C:\Repos\JobLocationFixer\JobLocationFixer\obj\Debug\netcoreapp3.1\JobLocationFixer.csproj.CopyComplete

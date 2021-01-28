@@ -10,7 +10,7 @@
    "request": "launch",
    "preLaunchTask": "build",
    "program": "${workspaceFolder}/JobLocationFixer/bin/Debug/netcoreapp3.1/JobLocationFixer.dll",
-   "args": [],
+   "args": ["C:\\Users\\SORLIK\\Desktop\\Untitled-2.xml"],
    "cwd": "${workspaceFolder}/JobLocationFixer",
    "console": "internalConsole",
    "stopAtEntry": false

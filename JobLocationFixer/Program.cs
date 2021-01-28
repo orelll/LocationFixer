@@ -1,36 +1,31 @@
 ﻿using System;
 using System.Linq;
-using System.Xml;
+using Serilog;
 
-namespace JobLocationFixer
-{
-    class Program
-    {
-        static void Main(string[] args)
-        {
-            Console.WriteLine("Hello World!");
+namespace JobLocationFixer {
+    class Program {
+        static void Main (string[] args) {
+            PrepareLogger ();
+            Log.Information ($@"Application started with arguments: {string.Join(Environment.NewLine, args)}");
 
-            var doc = new XmlDocument();
-            doc.Load(@"C:\Users\SORLIK\Desktop\Untitled-2.xml");
-            var locationsList = doc.GetElementsByTagName("job:location");
-            var locationByParent = locationsList.Cast<XmlNode>().ToList().GroupBy(e => e.ParentNode).Distinct();
+            var fileProcessor = new XMLProcessor ();
+            try {
+                var path = args.Count() > 0 ? args[0] : "";
 
-            foreach (var parent in locationByParent)
-            {
-                var locations = string.Join(',', parent.Select(x => x.InnerXml));
-
-                var newNode = parent.First().Clone();
-                newNode.InnerXml = locations;
-
-                foreach (var location in parent)
-                {
-                    parent.Key.RemoveChild(location);
-                }
-
-                parent.Key.AppendChild(newNode);
+                fileProcessor.ProcessFile (path);
+            } catch (Exception ex) {
+                Log.Error ($@"An exception occured: {ex}");
+            } finally {
+                Log.Information ("Application is going to shutdown");
             }
+        }
 
-            doc.Save(@"C:\Users\SORLIK\Desktop\Untitled-2_fixed.xml");
+        private static void PrepareLogger () {
+            Log.Logger = new LoggerConfiguration ()
+                .MinimumLevel.Debug ()
+                .WriteTo.Console ()
+                .WriteTo.File ("logfile.log", rollingInterval : RollingInterval.Day)
+                .CreateLogger ();
         }
     }
 }
