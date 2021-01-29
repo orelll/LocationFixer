@@ -1,5 +1,8 @@
 ﻿using System;
 using System.Linq;
+using System.ServiceProcess;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
 using Serilog;
 
 namespace JobLocationFixer {
@@ -8,17 +11,26 @@ namespace JobLocationFixer {
             PrepareLogger ();
             Log.Information ($@"Application started with arguments: {string.Join(Environment.NewLine, args)}");
 
-            var fileProcessor = new XMLProcessor ();
+            var hostBuilder = CreateHostBuilder (args);
+            
             try {
-                var path = args.Count() > 0 ? args[0] : "";
 
-                fileProcessor.ProcessFile (path);
+                hostBuilder.Build ().Run ();
             } catch (Exception ex) {
-                Log.Error ($@"An exception occured: {ex}");
-            } finally {
-                Log.Information ("Application is going to shutdown");
+                Log.Error ($"An error occured: {ex}");
             }
         }
+
+        public static IHostBuilder CreateHostBuilder (string[] args) =>
+            Host.CreateDefaultBuilder (args)
+            .ConfigureServices ((hostContext, services) => {
+                var filepath = args.Count () > 0 ? args[0] : "";
+                services.AddSingleton (new FixerConfig {
+                    FilePath = filepath,
+                    IterationDelay = Convert.ToInt32(TimeSpan.FromHours(8).TotalMilliseconds)
+                });
+                services.AddHostedService<LocationFixerService> ();
+            }).UseWindowsService ();
 
         private static void PrepareLogger () {
             Log.Logger = new LoggerConfiguration ()
